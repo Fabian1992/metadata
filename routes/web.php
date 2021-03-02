@@ -17,4 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('libro/oai.xml',[Libros::class,'index'])->name('librios');
+Route::get('libro/oai',[Libros::class,'index'])->name('librios');

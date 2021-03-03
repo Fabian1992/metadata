@@ -18,3 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('libro/oai',[Libros::class,'index'])->name('librios');
+Route::get('libro/oai/style',[Libros::class,'style'])->name('estilo');
